@@ -6,7 +6,7 @@ import utils.WaitUtils;
 
 public class BasePage{
     public WebDriver driver;
-    WebDriverInstance dri;
+    WebDriverInstance dri=WebDriverInstance.getInstance();
     WaitUtils wt;
     public BasePage(){
         driver= dri.getDriver();

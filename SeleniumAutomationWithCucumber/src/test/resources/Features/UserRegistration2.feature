@@ -1,6 +1,6 @@
 Feature: 1st feature
 
-  Scenario: Naivgation scenario
+  Scenario: Naivgation scenario2
     Given I navigate to flipkart website
     When I enter username as "9618095002"
     When I enter below password
@@ -20,3 +20,15 @@ Feature: 1st feature
     |        96180950023  |  passwords      |
       |        96180950023  |  passwords      |
       |        96180950023  |  passwords      |
+      |        96180950023  |  passwords      |
+      |        96180950023  |  passwords      |
+
+  Scenario: Naivgation scenario
+    Given I navigate to flipkart website
+    When I enter username as "9618095002"
+    When I enter below password
+    """
+    password
+    """
+    When I click on sign-in button
+    Then Verify Login is Successful

@@ -13,4 +13,8 @@ public class WaitUtils {
         webwait=new WebDriverWait(driver,timeout);
         webwait.until(ExpectedConditions.elementToBeClickable(ele));
     }
+    public void waitUntilElementIsVisible(WebElement ele,int timeout){
+        webwait=new WebDriverWait(driver,timeout);
+        webwait.until(ExpectedConditions.visibilityOf(ele));
+    }
 }
