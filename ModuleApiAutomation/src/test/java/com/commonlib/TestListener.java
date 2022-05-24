@@ -22,7 +22,7 @@ public class TestListener implements ITestListener {
 	public ExtentTest logger;
 
 	static String date = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-	static String reportName = "Test-Report-" + date + ".html";
+	static String reportName = "Test-Report.html";//"Test-Report-" + date + ".html";
 	static String path = System.getProperty("user.dir") + "/extentreports/" + reportName;
 
 	public void onStart(ITestContext context) {
