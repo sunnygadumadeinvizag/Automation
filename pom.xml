@@ -17,6 +17,7 @@
         <module>Cucumber_DependencyIngection</module>
         <module>Module_12_APIAutomation</module>
         <module>SeleniumAutomationWithCucumber</module>
+        <module>ModuleApiAutomation</module>
     </modules>
 
     <properties>
