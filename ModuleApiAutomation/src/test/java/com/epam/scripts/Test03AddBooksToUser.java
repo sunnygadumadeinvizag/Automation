@@ -59,7 +59,6 @@ public class Test03AddBooksToUser extends TestBase {
 				.body(jsonBody).post("/BookStore/v1/Books").then().log().all().extract().response();
 		Assert.assertEquals(HttpStatus.SC_CREATED, res.getStatusCode());
 
-//		"{ \"userId\": \"" + userID + "\", " + "\"collectionOfIsbns\": [ { \"isbn\": \"" + bookId
-//		+ "\" } ]}"
+
 	}
 }

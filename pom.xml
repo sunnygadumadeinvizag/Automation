@@ -18,6 +18,8 @@
         <module>Module_12_APIAutomation</module>
         <module>SeleniumAutomationWithCucumber</module>
         <module>ModuleApiAutomation</module>
+        <module>Module_1_AR_ObjectOrientedConecption</module>
+        <module>Module_5_AR_DesignPatterns</module>
     </modules>
 
     <properties>
@@ -40,9 +42,9 @@
             </dependency>
             <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-picocontainer -->
             <dependency>
-                <groupId>info.cukes</groupId>
+                <groupId>io.cucumber</groupId>
                 <artifactId>cucumber-picocontainer</artifactId>
-                <version>1.2.5</version>
+                <version>6.11.0</version>
             </dependency>
             <dependency>
                 <groupId>io.rest-assured</groupId>

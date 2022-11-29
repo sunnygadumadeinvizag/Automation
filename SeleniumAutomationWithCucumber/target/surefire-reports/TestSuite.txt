@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 109.129 s - in TestSuite
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.376 s <<< FAILURE! - in TestSuite
+Runners.Runner.runScenario["Naivgation scenario", "Optional[1st feature]"](2)  Time elapsed: 10.353 s  <<< FAILURE!
+java.lang.AssertionError: expected [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!] but found []
+

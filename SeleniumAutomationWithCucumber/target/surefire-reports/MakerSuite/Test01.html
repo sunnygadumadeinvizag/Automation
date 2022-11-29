@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test01</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 23 19:31:18 IST 2022</td>
+<td>Started on:</td><td>Mon May 23 20:56:52 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>108 seconds (108631 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20902 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,31 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runners.Runner.runScenario()'><b>runScenario</b><br>Test class: Runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Naivgation scenario", "Optional[1st feature]"</td>
+<td><div><pre>java.lang.AssertionError: expected [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!] but found []
+	at StepDefinitions.HomePageDefinitions.verifyLogin(HomePageDefinitions.java:25)
+	at ?.Verify Login is Successful(classpath:features/UserRegistration4.feature:35)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1346354118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1346354118'><pre>java.lang.AssertionError: expected [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at StepDefinitions.HomePageDefinitions.verifyLogin(HomePageDefinitions.java:25)
+	at ?.Verify Login is Successful(classpath:features/UserRegistration4.feature:35)
+</pre></div></td>
+<td>10</td>
+<td>Runners.Runner@6d7b4f4c</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,24 +100,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Runners.Runner.runScenario()'><b>runScenario</b><br>Test class: Runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Naivgation scenario", "Optional[1st feature]"</td>
+<td title='Runners.Runner.runScenario()'><b>runScenario</b><br>Test class: Runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Naivgation scenario4", "Optional[1st feature]"</td>
 <td></td>
-<td>6</td>
-<td>Runners.Runner@6d7b4f4c</td></tr>
-<tr>
-<td title='Runners.Runner.runScenario()'><b>runScenario</b><br>Test class: Runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Naivgation scenario for 96180950023", "Optional[1st feature]"</td>
-<td></td>
-<td>13</td>
-<td>Runners.Runner@6d7b4f4c</td></tr>
-<tr>
-<td title='Runners.Runner.runScenario()'><b>runScenario</b><br>Test class: Runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Naivgation scenario for 96180950023", "Optional[1st feature]"</td>
-<td></td>
-<td>49</td>
-<td>Runners.Runner@6d7b4f4c</td></tr>
-<tr>
-<td title='Runners.Runner.runScenario()'><b>runScenario</b><br>Test class: Runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Naivgation scenario for 96180950023", "Optional[1st feature]"</td>
-<td></td>
-<td>39</td>
+<td>9</td>
 <td>Runners.Runner@6d7b4f4c</td></tr>
 </table><p>
 </body>

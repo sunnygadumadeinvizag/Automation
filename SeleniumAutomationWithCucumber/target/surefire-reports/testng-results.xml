@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="MakerSuite" duration-ms="108631" started-at="2022-05-23T19:31:18 IST" finished-at="2022-05-23T19:33:06 IST">
+  <suite name="MakerSuite" duration-ms="20902" started-at="2022-05-23T20:56:52 IST" finished-at="2022-05-23T20:57:13 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.Runner@6d7b4f4c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test01" duration-ms="108631" started-at="2022-05-23T19:31:18 IST" finished-at="2022-05-23T19:33:06 IST">
+    <test name="Test01" duration-ms="20902" started-at="2022-05-23T20:56:52 IST" finished-at="2022-05-23T20:57:13 IST">
       <class name="Runners.Runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runners.Runner@6d7b4f4c]" name="setUpClass" is-config="true" duration-ms="363" started-at="2022-05-23T19:31:18 IST" finished-at="2022-05-23T19:31:18 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runners.Runner@6d7b4f4c]" name="setUpClass" is-config="true" duration-ms="546" started-at="2022-05-23T20:56:52 IST" finished-at="2022-05-23T20:56:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.Runner@6d7b4f4c]" name="runScenario" duration-ms="6137" started-at="2022-05-23T19:31:18 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T19:31:24 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.Runner@6d7b4f4c]" name="runScenario" duration-ms="9896" started-at="2022-05-23T20:56:53 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T20:57:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Naivgation scenario4"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[1st feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.Runner@6d7b4f4c]" name="runScenario" duration-ms="10353" started-at="2022-05-23T20:57:03 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T20:57:13 IST">
           <params>
             <param index="0">
               <value>
@@ -27,58 +43,26 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!] but found []
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at StepDefinitions.HomePageDefinitions.verifyLogin(HomePageDefinitions.java:25)
+at ✽.Verify Login is Successful(classpath:features/UserRegistration4.feature:35)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.Runner@6d7b4f4c]" name="runScenario" duration-ms="13737" started-at="2022-05-23T19:31:24 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T19:31:38 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Naivgation scenario for 96180950023"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[1st feature]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.Runner@6d7b4f4c]" name="runScenario" duration-ms="49046" started-at="2022-05-23T19:31:38 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T19:32:27 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Naivgation scenario for 96180950023"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[1st feature]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.Runner@6d7b4f4c]" name="runScenario" duration-ms="39117" started-at="2022-05-23T19:32:27 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-23T19:33:06 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Naivgation scenario for 96180950023"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[1st feature]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runners.Runner@6d7b4f4c]" name="tearDownClass" is-config="true" duration-ms="196" started-at="2022-05-23T19:33:06 IST" finished-at="2022-05-23T19:33:06 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runners.Runner@6d7b4f4c]" name="tearDownClass" is-config="true" duration-ms="70" started-at="2022-05-23T20:57:13 IST" finished-at="2022-05-23T20:57:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

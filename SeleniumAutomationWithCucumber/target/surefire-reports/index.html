@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-MakerSuite">
-              <span class="suite-name border-passed">MakerSuite</span>
+              <span class="suite-name border-failed">MakerSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MakerSuite" class="hide-methods failed suite-MakerSuite"> (hide)</a> <!-- hide-methods failed suite-MakerSuite -->
+                      <a href="#" panel-name="suite-MakerSuite" class="show-methods failed suite-MakerSuite"> (show)</a> <!-- show-methods failed suite-MakerSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-MakerSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MakerSuite" title="Runners.Runner" hash-for-method="runScenario(&quot;Naivgation scenario&quot;, &quot;Optional[1st feature]&quot;)">runScenario("Naivgation scenario", "Optional[1st feature]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MakerSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +116,7 @@
                     <div class="method-list-content passed suite-MakerSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MakerSuite" title="Runners.Runner" hash-for-method="runScenario(&quot;Naivgation scenario for 96180950023&quot;, &quot;Optional[1st feature]&quot;)">runScenario("Naivgation scenario for 96180950023", "Optional[1st feature]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MakerSuite" title="Runners.Runner" hash-for-method="runScenario(&quot;Naivgation scenario&quot;, &quot;Optional[1st feature]&quot;)">runScenario("Naivgation scenario", "Optional[1st feature]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MakerSuite" title="Runners.Runner" hash-for-method="runScenario(&quot;Naivgation scenario for 96180950023&quot;, &quot;Optional[1st feature]&quot;)">runScenario("Naivgation scenario for 96180950023", "Optional[1st feature]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MakerSuite" title="Runners.Runner" hash-for-method="runScenario(&quot;Naivgation scenario for 96180950023&quot;, &quot;Optional[1st feature]&quot;)">runScenario("Naivgation scenario for 96180950023", "Optional[1st feature]")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-MakerSuite" title="Runners.Runner" hash-for-method="runScenario(&quot;Naivgation scenario4&quot;, &quot;Optional[1st feature]&quot;)">runScenario("Naivgation scenario4", "Optional[1st feature]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MakerSuite -->
@@ -132,6 +131,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MakerSuite" class="panel MakerSuite">
+          <div class="suite-MakerSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Runners.Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Naivgation scenario&quot;, &quot;Optional[1st feature]&quot;)">
+                  </a> <!-- runScenario("Naivgation scenario", "Optional[1st feature]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Naivgation scenario", "Optional[1st feature]")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!] but found []
+	at StepDefinitions.HomePageDefinitions.verifyLogin(HomePageDefinitions.java:25)
+	at ✽.Verify Login is Successful(classpath:features/UserRegistration4.feature:35)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MakerSuite-class-failed -->
           <div class="suite-MakerSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -140,40 +162,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Naivgation scenario for 96180950023&quot;, &quot;Optional[1st feature]&quot;)">
-                  </a> <!-- runScenario("Naivgation scenario for 96180950023", "Optional[1st feature]") -->
+                  <a name="runScenario(&quot;Naivgation scenario4&quot;, &quot;Optional[1st feature]&quot;)">
+                  </a> <!-- runScenario("Naivgation scenario4", "Optional[1st feature]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Naivgation scenario for 96180950023", "Optional[1st feature]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Naivgation scenario&quot;, &quot;Optional[1st feature]&quot;)">
-                  </a> <!-- runScenario("Naivgation scenario", "Optional[1st feature]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Naivgation scenario", "Optional[1st feature]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Naivgation scenario for 96180950023&quot;, &quot;Optional[1st feature]&quot;)">
-                  </a> <!-- runScenario("Naivgation scenario for 96180950023", "Optional[1st feature]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Naivgation scenario for 96180950023", "Optional[1st feature]")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Naivgation scenario for 96180950023&quot;, &quot;Optional[1st feature]&quot;)">
-                  </a> <!-- runScenario("Naivgation scenario for 96180950023", "Optional[1st feature]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Naivgation scenario for 96180950023", "Optional[1st feature]")</span>
+                  <span class="parameters">("Naivgation scenario4", "Optional[1st feature]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -240,28 +232,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Runners.Runner')
-data.setCell(0, 3, 49046);
+data.setCell(0, 3, 10353);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'Runners.Runner')
-data.setCell(1, 3, 39117);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'Runners.Runner')
-data.setCell(2, 3, 13737);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'Runners.Runner')
-data.setCell(3, 3, 6137);
+data.setCell(1, 3, 9896);
 window.suiteTableData['MakerSuite']= { tableData: data, tableDiv: 'times-div-MakerSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-MakerSuite">
               </div> <!-- times-div-MakerSuite -->
             </div> <!-- times-div -->
@@ -293,24 +277,18 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">runScenario("Naivgation scenario4", "Optional[1st feature]")</span>
+                <span class="method-start">560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Naivgation scenario", "Optional[1st feature]")</span>
-                <span class="method-start">375 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Naivgation scenario for 96180950023", "Optional[1st feature]")</span>
-                <span class="method-start">6516 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Naivgation scenario for 96180950023", "Optional[1st feature]")</span>
-                <span class="method-start">20253 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Naivgation scenario for 96180950023", "Optional[1st feature]")</span>
-                <span class="method-start">69300 ms</span>
+                <span class="method-start">10458 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">108420 ms</span>
+                <span class="method-start">20816 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

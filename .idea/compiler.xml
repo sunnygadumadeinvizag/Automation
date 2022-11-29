@@ -2,17 +2,21 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ApiAutomation" />
+        <module name="ModuleApiAutomation" />
         <module name="Module_3_Collections" />
+        <module name="Module_5_AR_DesignPatterns" />
         <module name="Module_4_Java8" />
         <module name="Module_1_ObjectOrientedConcepts" />
         <module name="Cucumber_DependencyIngection" />
         <module name="Module_12_APIAutomation" />
         <module name="SeleniumAutomationWithCucumber" />
+        <module name="Module_1_AR_ObjectOrientedConecption" />
         <module name="Module_2_CoreJava" />
       </profile>
     </annotationProcessing>

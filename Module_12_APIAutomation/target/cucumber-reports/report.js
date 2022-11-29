@@ -33,7 +33,7 @@ formatter.match({
   "location": "StepDefinitions.get_user_status()"
 });
 formatter.result({
-  "duration": 5270100,
+  "duration": 891416800,
   "status": "passed"
 });
 formatter.match({
@@ -50,7 +50,7 @@ formatter.match({
   "location": "StepDefinitions.the_user_calls_the_something_with_the_something_request(String,String)"
 });
 formatter.result({
-  "duration": 296902900,
+  "duration": 839496000,
   "status": "passed"
 });
 formatter.match({
@@ -63,7 +63,7 @@ formatter.match({
   "location": "StepDefinitions.status_in_respose_body_is(int)"
 });
 formatter.result({
-  "duration": 455900,
+  "duration": 1489500,
   "status": "passed"
 });
 formatter.scenario({
@@ -93,7 +93,7 @@ formatter.match({
   "location": "StepDefinitions.get_user_status()"
 });
 formatter.result({
-  "duration": 6321600,
+  "duration": 2411300,
   "status": "passed"
 });
 formatter.match({
@@ -110,14 +110,14 @@ formatter.match({
   "location": "StepDefinitions.the_user_calls_the_something_with_the_something_request(String,String)"
 });
 formatter.result({
-  "duration": 297572300,
+  "duration": 306690600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.header_content_type_is_json()"
 });
 formatter.result({
-  "duration": 905400,
+  "duration": 5132400,
   "status": "passed"
 });
 formatter.scenario({
@@ -147,7 +147,7 @@ formatter.match({
   "location": "StepDefinitions.get_user_status()"
 });
 formatter.result({
-  "duration": 5616700,
+  "duration": 2421500,
   "status": "passed"
 });
 formatter.match({
@@ -164,7 +164,7 @@ formatter.match({
   "location": "StepDefinitions.the_user_calls_the_something_with_the_something_request(String,String)"
 });
 formatter.result({
-  "duration": 297841500,
+  "duration": 281596200,
   "status": "passed"
 });
 formatter.match({
@@ -177,7 +177,7 @@ formatter.match({
   "location": "StepDefinitions.the_size_of_response_is(int)"
 });
 formatter.result({
-  "duration": 27601800,
+  "duration": 423399900,
   "status": "passed"
 });
 });
